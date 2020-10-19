@@ -61,6 +61,9 @@ func KeyWordFn(keywords []string) TokenSelector {
 // KeyWords returns the indices of tokens that match a set of keywords
 var KeyWords = KeyWordFn(UsefulKeyWords)
 
+// LintWords returns the indices of tokens that matches keywords used by go lint
+var LintWords = KeyWordFn(GoLintKeywords)
+
 // Not inverts the given selector's matches
 func Not(sFn TokenSelector) TokenSelector {
 	return func(t Tokens) []int {
