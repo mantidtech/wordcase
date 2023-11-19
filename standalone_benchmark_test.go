@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-//noinspection GoUnusedGlobalVariable
+// noinspection GoUnusedGlobalVariable
 var result string // to avoid compiler optimisations
 
 func helperGenTestString(size int, pctRm, pctSep float64) string {
